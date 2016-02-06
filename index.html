@@ -127,7 +127,7 @@
                             urlMetaProviderSensor   : "cameraCalibration.json",
                             urlBuildingFootprint    : "buildingFootprint.json",
                             urlDTM                  : "dtm.json",
-                            urlPointCloud           : "pointclouds/",
+//                            urlPointCloud           : "pointclouds/",
                             url3DBuilding           : "Buildings3D/"
                         },
 
@@ -145,40 +145,9 @@
 
         initialize();
 
-        function laserPointMeasureEnable(e) {
-            //loading laser points!
-            if (!$("#checkboxLaserCloud").prop("checked")) {
-                itowns.addLayer("pointCloud",itowns.dataURL);
-                //LaserCloud.setVisibility(true);
-            } else {
-                itowns.removeLayer("pointCloud");
-            }
-            /*
-            LaserCloud.btnSwitchPoint = !LaserCloud.btnSwitchPoint;
-
-            if (LaserCloud.btnSwitchLine || LaserCloud.btnSwitchVolume) {
-                LaserCloud.btnSwitchLine = false;
-                LaserCloud.btnSwitchVolume = false;
-            }
-            */
-        }
-
-
-        function streetViewEnable(e) {
-
-        }
-
        </script>
 
         <div id="controls" class="controls">
-            <div class="row">
-                <div class="labelswitch">Laser cloud</div>
-                <div class="switch">
-                    <input id="checkboxLaserCloud" class="cmn-toggle cmn-toggle-round" type="checkbox">
-                    <label for="checkboxLaserCloud" onclick="laserPointMeasureEnable()"></label>
-                </div>
-            </div>
-
             <div class="help">
                 Use mouse to <strong>rotate</strong> the camera.<br />
                 Use mouse wheel to <strong>zoom in or out</strong>.<br />
