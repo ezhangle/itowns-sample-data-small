@@ -6,11 +6,11 @@
         <style>
             .controls {
                 border-radius: 5px;
-                position: absolute;
-                top: 10px;
-                left: 10px;
-                background: rgba(200,200,200,0.5);
-                font-family: Arial;
+                position: absolute; 
+                top: 10px; 
+                left: 10px; 
+                background: rgba(200,200,200,0.5); 
+                font-family: Arial; 
                 padding: 10px;
                 color: white;
             }
@@ -123,7 +123,9 @@
                  itowns = new API({
                         dataURL: {
                             urlMetaDataProviderPos  : "panoramicsMetaData.json",
-                            urlImageFile            : "images/",
+                            urlImageFile            : "../itowns-sample-data-small/images/140616/Paris-140616_0740-{cam}-00001_{pano}.jpg",
+//                            urlImageFile            : "../itowns-sample-data/images/140616/Paris-140616_0740-{cam}-00001_{pano}.jpg",
+//                            urlImageFile            : "http://www.itowns.fr/cgi-bin/iipsrv.fcgi?FIF=/iipimagesV2/140616/Paris-140616_0740-{cam}-00001_{pano}.jp2&WID=512&QLT=80&CVT=JPEG",
                             urlMetaProviderSensor   : "cameraCalibration.json",
                             urlBuildingFootprint    : "buildingFootprint.json",
                             urlDTM                  : "dtm.json",
@@ -144,8 +146,7 @@
          }
 
         initialize();
-
-       </script>
+		</script>
 
         <div id="controls" class="controls">
             <div class="help">
@@ -154,8 +155,8 @@
                 Use mouse left click to <strong>move forward</strong>.<br />
                 Use keyboard arrows to <strong>move up and down</strong>.<br />
             </div>
-
         </div>
 
     </body>
 </html>
+
